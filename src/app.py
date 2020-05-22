@@ -6,9 +6,10 @@ from flask import Flask, render_template, abort, request
 from MemeEngine import MemeEngine
 from QuoteEngine import Importer
 from QuoteEngine import QuoteModel
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-app = Flask(__name__, static_folder = dir_path)
+app = Flask(__name__, static_folder=dir_path)
 
 meme = MemeEngine(dir_path)
 
@@ -69,17 +70,18 @@ def meme_post():
 
     image_url = request.form.get('image_url')
     r = requests.get(image_url)
-    tmp = f'./tmp/{random.randint(0, 100000000)}.png'
-    print(tmp)
+    tmp = dir_path+'/'+str(random.randint(0, 100000000))+'.png'
     with open(tmp, 'wb') as f:
         f.write(r.content)
 
     if request.form.get('body') != "" and request.form.get('author') != "":
-        quote = QuoteModel(request.form.get('body'), request.form.get('author'))
+        quote = QuoteModel(request.form.get('body'),
+                           request.form.get('author'))
     else:
         quote = random.choice(quotes)
     path = meme.make_meme(tmp, quote.body, quote.author)
-    os.remove(tmp)
+    # os.remove(tmp)
+    print(path)
     return render_template('meme.html', path=path)
 
 

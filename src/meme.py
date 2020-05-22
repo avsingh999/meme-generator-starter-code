@@ -61,6 +61,3 @@ if __name__ == "__main__":
         os.makedirs("./tmp")
 
     print(generate_meme(args.path, args.body, args.author))
-
-
-

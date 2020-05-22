@@ -1,8 +1,8 @@
 import pandas
 from typing import List
-
 from .ImportInterface import ImportInterface
 from .QuoteModel import QuoteModel
+
 
 class CSVImporter(ImportInterface):
     allowed_extensions = ['csv']

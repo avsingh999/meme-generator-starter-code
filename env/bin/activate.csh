@@ -10,7 +10,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/avsingh999/Desktop/udacity-py/01/PYND/02_meme_gen_starter/env"
+setenv VIRTUAL_ENV "/home/avsingh999/Desktop/udacity-py/meme-generator-starter-code-sol-udacity/meme-generator-starter-code/env"
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"

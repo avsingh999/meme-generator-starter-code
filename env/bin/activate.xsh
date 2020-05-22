@@ -25,7 +25,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/avsingh999/Desktop/udacity-py/01/PYND/02_meme_gen_starter/env"
+$VIRTUAL_ENV = r"/home/avsingh999/Desktop/udacity-py/meme-generator-starter-code-sol-udacity/meme-generator-starter-code/env"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

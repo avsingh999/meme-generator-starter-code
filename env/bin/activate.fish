@@ -56,7 +56,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/avsingh999/Desktop/udacity-py/01/PYND/02_meme_gen_starter/env"
+set -gx VIRTUAL_ENV "/home/avsingh999/Desktop/udacity-py/meme-generator-starter-code-sol-udacity/meme-generator-starter-code/env"
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | tr "." "\n")[1] -lt 3

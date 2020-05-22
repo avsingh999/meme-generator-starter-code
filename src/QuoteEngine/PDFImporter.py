@@ -6,6 +6,7 @@ import random
 from .ImportInterface import ImportInterface
 from .QuoteModel import QuoteModel
 
+
 class PDFImporter(ImportInterface):
     allowed_extensions = ['pdf']
 

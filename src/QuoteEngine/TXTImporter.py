@@ -3,6 +3,7 @@ from typing import List
 from .ImportInterface import ImportInterface
 from .QuoteModel import QuoteModel
 
+
 class TXTImporter(ImportInterface):
     allowed_extensions = ['txt']
 
