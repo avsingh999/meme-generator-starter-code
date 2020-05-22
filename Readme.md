@@ -152,8 +152,7 @@ request
 random
 ```
 #### Example
-
-
+![create meme](https://github.com/avsingh999/meme-generator-starter-code/blob/master/create_meme.png)
 ### Module 
 ```meme.py``` : This module for meme generator using terminal/cmd.
 #### General description
@@ -194,4 +193,5 @@ python meme-py --path path_to_image --body "hola, que ase?" --author "populacho"
 ```
 source env/bin/activate
 export FLASK_APP=app.py
-flask run --host 0.0.0.0 --port 3000 --reload
+flask run
+```
